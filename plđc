@@ -1,4 +1,30 @@
 <>: khá
+
+Subquery với ALL dùng để:
+So sánh với tất cả giá trị trong tập hợp con
+
+ubquery có thể xuất hiện ở đâu trong câu lệnh SQL?
+Trong SELECT, FROM, hoặc WHERE
+
+Subquery trong mệnh đề FROM được gọi là gì?
+Inline View
+
+Subquery là gì trong SQL?
+Một truy vấn lồng bên trong truy vấn khác
+
+:Subquery dùng với IN sẽ trả về:
+a. Một tập hợp giá trị
+
+Khi bạn DELETE bản ghi có liên kết khóa ngoại (foreign key) và không bật ON DELETE CASCADE, điều gì xảy ra?
+a.Bị lỗi vi phạm ràng buộc
+
+Muốn xóa tất cả dòng trong bảng mà không ghi log từng dòng, dùng lệnh nào? 
+TRUNCATE
+
+ Bạn có thể dùng UPDATE với ORDER BY và LIMIT không?
+a.Có thể, nhưng chỉ trong MySQL
+
+
 34. Kết nối bằng nhau các quan hệ theo thuộc tính là:Thực hiện tích Đề Các và phép chọn
 
 “select * from r where B = 17” σB=17(r)
@@ -215,6 +241,7 @@ MaKH, NgayDathang}; R12 với U12 = {MaKH, TenKH, DiaChiKH}; R21 với U21 =
 
 giả sử ta có quan hệ S có 3 thuộc tính theo thứ tự là (1, 2, 3); (4, 2, 3) và (5,3,3). Các phụ thuộc hàm nào sau đây đúng trên S
 b. BC -> A
+
 
 
 
