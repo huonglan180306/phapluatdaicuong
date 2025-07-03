@@ -1,4 +1,95 @@
 <>: khá
+34. Kết nối bằng nhau các quan hệ theo thuộc tính là:Thực hiện tích Đề Các và phép chọn
+
+Câu 35. Trong SQL, ngôn ngữ định nghĩa dữ liệu bao gồm các chức năng:
+a. Tạo, sửa và xóa cấu trúc quan hệ. Bảo mật và quyền truy nhập.
+
+Cho lược đồ quan hệ R= <U,F> với U= {A,B,C,D,E,F,G,H,I,J} có khóa chính là {A,B} và F = {AB -> CDEFGHIJ, A-> EFGHIJ,
+F-> IJ}. Hãy chuẩn hóa quan hệ R về dạng chuẩn 3NF.
+Kết quả chúng ta có có 3 quan hệ: R1 với U1= {ABCD}; R21 với U21= {AEFGH} và R22 với U22= {FIJ}
+
+Kết quả của các phép thao tác dữ liệu là: quan hệ 
+
+Cho lược đồ quan hệ R = U(A, B, C) và F={AB→C, C→A}. Phụ thuộc hàm AB → ABC được tạo ra từ luật nào sau đây?
+Luật tăng trưởng (thêm AB vào phụ thuộc hàm AB→C)
+
+Quá trình chuẩn hoá dữ liệu là quá trình: Tách lược đồ quan hệ không làm tổn thất thông tin
+
+Cho quan hệ: SV(MaSV, HoDem, Ten, NgaySinh, GioiTinh, QueQuan). Câu lệnh SQL nào sau đây cho phép tạo khung
+nhìn SV_Nu gồm các cột HoTen, Ngaysinh, Gioitinh với những sinh viên có GioiTinh là Nu
+CREATE VIEW SV_NU as select HoDem+' '+ten as HoTen, Ngaysinh, Gioitinh from sv where gioitinh like 'Nu';
+
+Ngôn ngữ định nghĩa dữ liệu bao gồm các lệnh cho phép là gì?
+Khai báo kiểu dữ liệu của CSDL
+
+CREATE TABLE mô tả quan hệ và các thuộc tính.
+
+Quan hệ (Relation) là một tập con của tích Đề Các (Cartesian Product) giữa các miền dữ liệu. Một quan hệ có thể được xem như một bảng, trong đó các cột là các thuộc tính, và các hàng là các bộ dữ liệu.
+
+Hai bảng trong một CSDL quan hệ liên kết với nhau thông qua: Thuộc tính của các trường được chọn (không nhất thiết phải là khóa)
+
+Câu 26. Các toán hạng trong các phép toán là:
+a. Các quan hệ
+
+Câu 43. Mệnh đề GROUP BY ... HAVING
+a. Phân hoạch các bộ của một quan hệ thành các nhóm riêng biệt và áp dụng các phép toán gộp cho các
+nhóm.
+
+Giả sử ta có quan hệ S có 3 thuộc tính ABC, gồm 3 bộ theo thứ tự là: (1, 2, 3); (4, 2, 3); và (5, 3, 3). Tập phụ thuộc hàm
+đúng trên mọi thể hiện của S là.
+Không thể có vì mỗi tập phụ thuộc hàm chỉ có thể đúng với 1 thể hiện của S
+
+Cho các lược đồ quan hệ sau: R=(A, B, C) và S = (D, E, F). Xét quan hệ r(R); s(S) cùng r1, r2 là hai quan hệ trên R. Câu
+lệnh SQL “select * from r1 where (A, B, C) in (select * from r2)” thực hiện biểu thức đại số quan hệ nào:
+r1 Ո r2
+
+Phép chiếu - WHERE
+Phép chọn - SELECT
+Phép tích - FROM
+Phép gộp nhóm - GROUP BY
+
+Tập hợp tất cả các (n+m)-bộ có n thành phần đầu tiên là 1 bộ thuộc r và m thành phần
+sau là 1 bộ thuộc s được gọi là: tích Đề các của 2 quan hệ r và s, ký hiệu r x s
+
+Quan hệ 3NF có thể được áp dụng trong tìm kiếm vì: không xuất hiện các dị thường
+thông tin khi thực hiện các phép lưu trữ
+
+Tối ưu theo nghĩa biến đổi 1 biểu thức đại số quan hệ: cho cùng một kết quả với thời
+gian thực hiện và sử dụng bộ nhớ ít hơn
+
+26. Ngôn ngữ thao tác dữ liệu: là một tập các phép toán dùng để cập nhật, bổ sung trên các
+hệ cơ sở dữ liệu
+
+27. Mô hình quan niệm: là cách nhìn dữ liệu 1 cách tổng quát của người sử dụng
+
+28. Các bước chính để tạo CSDL: tạo bảng - chọn khóa chính cho bảng - đặt tên bảng và lưu
+cấu trúc bảng - tạo liên kết bảng
+
+Hệ quản trị CSDL (DBMS) là: phần mềm điều khiển các chiến lược truy nhập CSDL
+
+29. Các thuộc tínnh khóa là: các phần tử của khóa
+
+Mô hình ngoài: nội dung thông 琀椀n của một phần dữ liệu dưới cách nhìn của người sử
+dụng
+
+nếu trong câu lệnh SELECT có chứa GROUP BY, hệ thống sẽ phân h oạc h quan
+hệ thành nhi ều nhóm tách bi ệt nhau và thực hiện các phép gộp nhóm
+
+Câu 16: Trong đại số quan hệ, phép chia (R ÷ S) có thể được biểu diễn bằng các phép toán nào?
+ 	B) π_{A}(R) − π_{A}((π_{A}(R) × S) − R)
+
+Tối ưu hóa câu hỏi bằng cách: thực hiện phép chiếu và phép chọn - sau đó là phép kết
+nối
+
+Ngôn ngữ định nghĩa dữ liệu - DDL: được đặc tả bằng 1 ngôn ngữ, 1 phần của hệ quản
+trị CSDL
+
+Có thể chèn thêm thông 琀椀n 1 loại cap khi chưa được lắp đặt: không thể được, vì giá trị
+khóa không xác định
+
+
+
+
 
 LỊCH SỬ CƠ SỞ DỮ LIỆU
 - Những năm 60: Mô hình dữ liệu phân cấp + mô hình dạng mạng
