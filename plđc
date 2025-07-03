@@ -1,6 +1,67 @@
 <>: khá
 34. Kết nối bằng nhau các quan hệ theo thuộc tính là:Thực hiện tích Đề Các và phép chọn
 
+“select * from r where B = 17” σB=17(r)
+
+“select dis琀椀nct A from r” ΠA(r)
+
+“select dis琀椀nct A, F from r, s where C = D” ΠA,F(σC=D (r x s))
+
+“select dis琀椀nct * from r, s” r x s
+
+“select * from r1 where (A, B, C) not in (select * from r2)” r-s
+
+Trong mô hình cơ sở dữ liệu mạng, mỗi nút có thể kết nối với các nút khác như thế nào? c.
+Theo mối quan hệ nhiều-nhiều
+
+Mô hình cơ sở dữ liệu mạng cho phép điều gì mà mô hình phân cấp không hỗ trợ?
+Mỗi nút có thể có nhiều cha
+
+Hệ quản trị cơ sở dữ liệu đảm bảo sự độc lập dữ liệu bằng cách nào
+a. Bằng cách tách biệt cấu trúc lưu trữ vật lý và logic của dữ liệu
+
+Mô hình cơ sở dữ liệu nào được sử dụng phổ biến nhất? phù hợp nhất cho việc quản lý dữ liệu trong một tổ chức lớn?
+Mô hình quan hệ
+
+Khi một thực thể con có thể thuộc nhiều thực thể cha cùng lúc, đây gọi là: 
+Chuyên biệt hóa chồng chéo (Overlapping Specialization)
+
+Mô hình ER có thể được chuyển đổi sang mô hình nào?
+a.Mô hình hướng đối tượng
+b.Mô hình quan hệ
+
+Thuộc tính dẫn xuất (Derived Attribute) được xác định như thế nào?
+Được tính toán từ các thuộc tính khác
+
+Trong mô hình ER, chuyên biệt hóa thường liên quan
+b.Kế thừa thuộc tính từ thực thể cha
+c.Chia nhỏ thực thể thành nhiều lớp con
+d.Áp dụng ràng buộc trong cơ sở dữ liệu
+
+Ràng buộc toàn vẹn thực thể liên quan đến:.
+Giá trị NULL trong khóa chính
+
+Ràng buộc toàn vẹn tham chiếu đảm bảo điều gì?
+a. Mọi giá trị khóa ngoại phải tồn tại trong bảng cha
+
+Phép toán nào giúp tìm ra những nhân viên đã làm việc trong tất cả các dự án của một công ty?
+Phép chia (Division)
+
+Phép nối Theta (Theta Join) khác với phép nối tự nhiên (Natural Join) như thế nào?
+Nó có thể sử dụng bất kỳ điều kiện nào để nối
+
+Phép nối (Join) là một mở rộng của phép toán nào?
+d. Phép tích Cartesian
+
+Kết quả của phép chiếu (Projection) có thể chứa các bộ trùng lặp khôn
+a.Không, bao giờ cũng loại bỏ trùng lặp
+
+Câu 5 Lệnh nào xóa bản ghi có ngày tạo là 30 ngày trước trong bảng logs(created_at)?
+cả 2 đều đúng
+
+
+
+
 Câu 35. Trong SQL, ngôn ngữ định nghĩa dữ liệu bao gồm các chức năng:
 a. Tạo, sửa và xóa cấu trúc quan hệ. Bảo mật và quyền truy nhập.
 
