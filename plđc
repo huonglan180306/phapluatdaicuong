@@ -87,7 +87,73 @@ trị CSDL
 Có thể chèn thêm thông 琀椀n 1 loại cap khi chưa được lắp đặt: không thể được, vì giá trị
 khóa không xác định
 
+Nguyên tắc đánh giá tối ưu hóa biểu thức quan hệ: ưu tiên thực hiện các phép chọn và
+phép chiếu
 
+Câu nào SAI : việc xác định khóa phụ thuộc vào quan hệ logic của các dữ liệu chứ không
+phụ thuộc vào giá trị các dữ liệu
+
+Khi thực hiện các phép toán trong một biểu thức quan hệ, thứ tự ưu 琀椀ên là: các phép
+toán 1 ngôi có thứ tự cao hơn các phép toán 2 ngôi
+
+64. Mục 琀椀êu của phép tách lược đồ quan hệ là: nhằm loại bỏ dị thường thông 琀椀n khi thực
+hiện các phép lưu trữ
+
+65. Quá trình tách không làm tổn thất thông 琀椀n theo nghĩa: quan hệ gốc được khôi phục
+từ các quan hệ chiếu bằng phép kết nối tự nhiên
+
+Mệnh đề AS được sử dụng để thay
+đổi tên một cột trong tập kết quả hoặc để gán tên cho một cột dẫn xuất
+
+INDEX trong SQL là gì?: là một thuộc 琀nh bảng CSDL, giúp tăng tốc 琀m kiếm dữ liệu
+trong 1 bảng
+
+Từ khóa SQL nào được sử dụng để chỉ truy xuất các giá trị duy nhất?: DISTINCT
+
+13. Cho bài toán: Một công ty có nhiều cửa hàng. Các cửa hàng nhận hàng hóa trực 琀椀ếp
+từ nhà cung cấp, rồi bán trực 琀椀ếp cho khách hàng. Công ty có 1 số trung tâm bảo
+hành, nhân viên bảo hành chịu trách nhiệm bảo hành cho 1 số lượng khách hàng.
+Nhóm nào sau đây liệt kê đầy đủ các thực thể của bài toán quản lí: Cửa hàng, hàng
+hóa, nhà cung cấp, khách hàng, trung tâm bảo hành, nhân viên
+
+Cho bảng customer(cat_id, customer_name). Câu lệnh nào sau đây sẽ thực thi thành
+công? SELECT customer_name FROM customers WHERE cat_id = 12 ORDER BY cat_id;
+
+R=, F = {B --> C, C--> B, A --> GD}, khóa quan hệ là: ACE
+
+R =, F:={AB --> C,D --> EG,C--> A,BE --> C, BC --> D, CG --> BD,ACD --> B, CE --> AG}
+{
+~EB, CE, BC không là khóa của lược đồ quan hệ
+~EC, CE, BC khóa của lược đồ quan hệ
+~AB, CG, CD không là khóa của lược đồ quan hệ
+= AB, CG, CD khóa của lược đồ quan hệ
+}
+A, B ,C, D, E, G
+
+“select * from r where B = 17” σB=17(r)
+
+“select dis琀椀nct A from r” ΠA(r)
+
+“select dis琀椀nct A, F from r, s where C = D”  ΠA,F(σC=D (r x s))
+
+“select dis琀椀nct * from r, s” r x s
+
+“select * from r1 where (A, B, C) in (select * from r2)” r1 Ո r2
+
+“select * from r1 where (A, B, C) not in (select * from r2)” r - s
+
+Giả sử ta có quan hệ S có 3 thuộc 琀nh ABC, gồm 3 bộ theo thứ tự là: (1, 2, 3); (4, 2, 3); và (5, 3,
+3). Tập phụ thuộc hàm đúng trên mọi thể hiện của S là: KHÔNG THỂ CÓ vì mỗi tập phụ thuộc
+hàm chỉ có thể đúng với 1 thể hiện của S
+
+Cho quan hệ R(SoHD, MaKH, TenKH, DiaChiKH, NgayDathang, {MaHang, TenHang, SoLuong,
+ThanhTien}). Giả thiết rằng đơn giá của mỗi mặt hàng không thay đổi. Hãy chuẩn hóa quan hệ R
+về dạng chuẩn 3NF.Sau khi chuẩn hóa đến 3NF chúng ta có 4 quan hệ sau: R11 với U11 = {SoHD,
+MaKH, NgayDathang}; R12 với U12 = {MaKH, TenKH, DiaChiKH}; R21 với U21 =
+{SoHoadon,Mahang,SoLuong}; R22 với U22 = {Mahang, Tenhang, DonGia}
+
+giả sử ta có quan hệ S có 3 thuộc tính theo thứ tự là (1, 2, 3); (4, 2, 3) và (5,3,3). Các phụ thuộc hàm nào sau đây đúng trên S
+b. BC -> A
 
 
 
@@ -171,8 +237,7 @@ quan hệ là các bảng
 MÔ HÌNH DỮ LIỆU LIÊN KẾT THỰC THỂ
 - Ký hiệu:
 
-Tên thuộc
-tính
+Tên thuộc tính
 
 Tên thực thể Tên quan hệ
 
